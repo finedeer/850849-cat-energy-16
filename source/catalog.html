@@ -7,22 +7,25 @@
   <body class="inner-page">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-img" src="img/logotype.svg" width="100" height="100" alt="cat energy">
+      <img class="page-header__logo-img" src="img/logotype.svg" alt="cat energy" width="100" height="100">
     </a>
-      <nav class="main-nav">
-        <button class="main-nav__togle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+    <nav class="main-nav">
+      <button class="main-nav__togle" type="button">Открыть меню</button>
+      <button class="main-nav__close" type="button"></button>
+      <div class="main-nav__wraper">
+      <ul class="main-nav__list">
+        <li class="site-list__item site-list__item--active">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
     </header>
     <main class="page-main">
       <section class="catalogue">
@@ -34,7 +37,7 @@
             </h2>
               <p class="catalogue__item--image">
                       <a href="catalogue-item.html">
-                        <img src="img/ct-nrg1.png" width="100" height="100" alt="CAT ENERGY PRO 500Г hen">
+                        <img src="img/ct-nrg1.png" alt="CAT ENERGY PRO 500Г hen" width="100" height="100">
                       </a>
                       </p>
             <p class="catalogue__item--description">
@@ -63,7 +66,7 @@
             </h2>
               <p class="catalogue__item--image">
                       <a href="catalogue-item.html">
-                        <img src="img/ct-nrg2.png" width="100" height="100" alt="CAT ENERGY PRO 1000Г hen">
+                        <img src="img/ct-nrg2.png" alt="CAT ENERGY PRO 1000Г hen" width="100" height="100">
                       </a>
                       </p>
             <p class="catalogue__item--description">
@@ -92,7 +95,7 @@
             </h2>
               <p class="catalogue__item--image">
                       <a href="catalogue-item.html">
-                        <img src="img/ct-nrg3.png" width="100" height="100" alt="CAT ENERGY PRO 500Г fish">
+                        <img src="img/ct-nrg3.png" alt="CAT ENERGY PRO 500Г fish" width="100" height="100">
                       </a>
                       </p>
             <p class="catalogue__item--description">
@@ -121,7 +124,7 @@
             </h2>
               <p class="catalogue__item--image">
                       <a href="catalogue-item.html">
-                        <img src="img/ct-nrg4.png" width="100" height="100" alt="CAT ENERGY PRO 1000Г fish">
+                        <img src="img/ct-nrg4.png" alt="CAT ENERGY PRO 1000Г fish" width="100" height="100">
                       </a>
                       </p>
             <p class="catalogue__item--description">
@@ -150,7 +153,7 @@
             </h2>
               <p class="catalogue__item--image">
                       <a href="catalogue-item.html">
-                        <img src="img/ct-nrg5.png" width="100" height="100" alt="CAT ENERGY PRO 500Г buckwheat">
+                        <img src="img/ct-nrg5.png" alt="CAT ENERGY PRO 500Г buckwheat" width="100" height="100">
                       </a>
                       </p>
             <p class="catalogue__item--description">
@@ -179,7 +182,7 @@
             </h2>
               <p class="catalogue__item--image">
                       <a href="catalogue-item.html">
-                        <img src="img/ct-nrg6.png" width="100" height="100" alt="CAT ENERGY PRO 1000Г buckwheat">
+                        <img src="img/ct-nrg6.png" alt="CAT ENERGY PRO 1000Г buckwheat" width="100" height="100">
                       </a>
                       </p>
             <p class="catalogue__item--description">
@@ -208,7 +211,7 @@
             </h2>
               <p class="catalogue__item--image">
                       <a href="catalogue-item.html">
-                        <img src="img/ct-nrg7.png" width="100" height="100" alt="CAT ENERGY PRO 500Г rice">
+                        <img src="img/ct-nrg7.png" alt="CAT ENERGY PRO 500Г rice" width="100" height="100">
                       </a>
                       </p>
             <p class="catalogue__item--description">
@@ -232,16 +235,16 @@
               </p>
           </li>
         </ul>
-        <p class="catalogue__about">
+        <p class="catalogue__more catalogue__more__cross">
           <a href="all-catalog.html">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</a>
         </p>
-        <p class="catalogue__intro">На самом деле вкусов гораздо больше!</p>
+        <p class="catalogue__aside">На самом деле вкусов гораздо больше!</p>
           <a class="button catalogue__link" href="all-catalog.html">Показать все</a>
       </section>
    </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-       <img class="page-footer__logo-img" src="img/logotype.svg" width="100" height="100" alt="cat energy">
+       <img class="page-footer__logo-img" src="img/logotype.svg" alt="cat energy" width="100" height="100">
       </a>
       <div class="page-footer__social social">
             <ul class="social__list" >
@@ -256,11 +259,12 @@
               </li>
             </ul>
        </div>
-
-         <div class="page-footer__copyright copyright">
-          <a class=" copyright__logo" href="http://htmlacademy.ru/intensive/adaptive"></a>
-          <a class="button copyright__link" href="http://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </div>
+       <div class="page-footer__copyright copyright">
+        <a class="button copyright__link" href="http://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class=" copyright__logo" href="http://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo-img" src="img/htmlacademy.svg" alt="htmlacademy logotype" width="50" height="50">
+        </a>
+        </div>
       </footer>
 
   </body>
