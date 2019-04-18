@@ -1,0 +1,101 @@
+.plan-promo{
+  display: block;
+  width: 320px;
+  margin:0;
+  padding: 0;
+  margin-bottom: 32px;
+  background: rgba(50, 163, 189, 0.53);
+  outline: 3px solid rgba(50, 163, 189, 1);
+}
+.plan-promo__list{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.plan-promo__item {
+width: 280px;
+margin-left: auto;
+margin-right: auto;
+background-color: #f2f2f2;
+outline: 3px solid #940215;
+}
+plan-promo__item:first-child {
+margin-bottom: 20px;
+
+}
+.plan-promo__item::before{
+display: block;
+position: absolute;
+  width: 50px;
+  height: 51px;
+  border:none;
+border-radius: 100%;
+
+  background-color: #68b738;
+}
+.plan-promo--slim::before{
+  content: '';
+
+  display: block;
+
+  width: 35px;
+  height: 49px;
+
+  background-image: url("../img/icon-cat-slim.svg");
+}
+.plan-promo--pro::before{
+  content: '';
+
+  display: block;
+  position: absolute;
+
+  width: 67px;
+  height: 28px;
+
+  background-image: url("../img/icon-cat-pro.svg");
+}
+.plan-promo__title {
+margin-top: 39px ;
+margin-left: 92px;
+  font-family: Oswald;
+  font-size: 24px;
+  line-height: 1.54;
+color: #111111;
+background: rgba(250, 63, 189, 0.53);
+outline: 3px solid rgba(250, 63, 189, 1);
+}
+.plan-promo__description {
+  width: 223px;
+
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+}
+.plan-promo__link {
+  width: 81px;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #111111;
+}
+.plan-promo__link::after{
+  content: '';
+
+  display: block;
+
+  width: 35px;
+  height: 49px;
+
+  background-image: url("../img/icon-cat-slim.svg");
+}

@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  background: rgba(250, 163, 189, 0.53);
+  outline: 3px solid #940215;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 191px;
+  height: 39px;
+  padding-top: 11px;
+}
+@media (min-width: @tablet-width) {
+  .header {
+    display: flex;
+      justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+    outline: 3px solid #940215;
+
+}
+.header__logo {
+  width: 174px;
+  height: 59px;
+  padding-top: 24px;
+}
+}
+@media (min-width: @desktop-width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+}
+.header__logo {
+  width: 203px;
+  height: 60px;
+  padding-top: 53px;
+}
+}
