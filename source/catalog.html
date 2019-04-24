@@ -14,11 +14,10 @@
       <a class="header__logo" href="index.html">
         <img class="header__logo-img" src="img/logo-mobile.svg" alt="cat energy" width="191" height="39">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__togle" type="button">Открыть меню</button>
-        <button class="main-nav__close" type="button"></button>
-        <div class="main-nav__wraper">
-          <ul class="main-nav__list">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
@@ -29,7 +28,7 @@
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
+      
       </nav>
     </header>
     <main class="main">
@@ -267,16 +266,16 @@
               <a href="catalogue-item-rice500.html">Заказать</a>
             </p>
           </li>
+          <li class="catalogue__more">
+              <p class="catalogue__open-more catalogue__open-more__cross">
+                <a href="all-catalog.html">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</a>
+              </p>
+              <p class="catalogue__aside">На самом деле вкусов гораздо больше!</p>
+              <p class="show-all">
+              <a class="button catalogue__link" href="all-catalog.html">Показать все</a>
+            </p>
+          </li>
         </ul>
-        <div class="catalogue__more">
-          <p class="catalogue__open-more catalogue__open-more__cross">
-            <a href="all-catalog.html">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</a>
-          </p>
-          <p class="catalogue__aside">На самом деле вкусов гораздо больше!</p>
-          <p class="show-all">
-          <a class="button catalogue__link" href="all-catalog.html">Показать все</a>
-        </p>
-        </div>
       </section>
     </main>
     <footer class="footer">
@@ -305,5 +304,22 @@
         </a>
       </div>
     </footer>
+    
+    <script>
+var navMain = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
+
+navMain.classList.remove('main-nav--nojs');
+
+navToggle.addEventListener('click', function() {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+});
+</script>
 </body>
 </html>

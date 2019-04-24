@@ -15,11 +15,10 @@
         <a class="header__logo">
           <img class="header__logo-img" src="img/logo-mobile.svg" alt="cat energy" width="191" height="39">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__togle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-          <div class="main-nav__wraper">
-            <ul class="main-nav__list">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        
+            <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
                 <a href="index.html">Главная</a>
               </li>
@@ -30,15 +29,15 @@
                 <a href="form.html">Подбор программы</a>
               </li>
             </ul>
-          </div>
+        
         </nav>
       </header>
       <main class="main">
         <div class="promo-block">
-          <h1 class="promo-block__title">Функциональное питание для котов</h1>
+          <h1 class="promo-block__title">Функциональное<br> питание для котов</h1>
             <p class="promo-block__intro">Занялся собой? Займись котом?</p>
-            <a class="promo-block__slider">
-              <img class="promo-block__slider-img" src="img/index-can-mobile@1x.png" alt="CAT ENERGY PRO 500Г hen" width="280" height="270">
+            <a class="promo-block__can">
+              <img class="promo-block__can-img" src="img/index-can-mobile@1x.png" alt="CAT ENERGY PRO 500Г hen" width="280" height="270">
             </a>
             <p  class="promo-block__choose" >
               <a class="button promo-block__link" href="form.html">Подобрать программу</a>
@@ -104,5 +103,22 @@
           </div>
         </footer>
       </div>
+      
+      <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
     </body>
     </html>

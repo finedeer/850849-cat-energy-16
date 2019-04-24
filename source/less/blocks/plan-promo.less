@@ -1,7 +1,7 @@
 .plan-promo{
   display: block;
   width: 320px;
-  margin:0;
+  margin:0 auto;
   padding:0;
   margin-bottom: 32px;
   background: rgba(50, 163, 189, 0.53);
@@ -12,19 +12,20 @@ list-style: none;
 margin: 0;
 padding: 0;
 }
+
 .plan-promo__item {
-width: 280px;
+display: block;
+width: 108px;
 margin-left: auto;
 margin-right: auto;
-margin-bottom: 20px;
-padding: 20px 22px;
+padding:0;
 background-color: #f2f2f2;
 outline: 3px solid #940215;
-}
-plan-promo__item:first-child {
+ &:first-child{
 margin-bottom: 20px;
-
 }
+}
+
 .plan-promo::before{
 display: block;
 
@@ -58,8 +59,7 @@ border-radius: 100%;
   background-image: url("../img/icon-cat-pro.svg");
 }
 .plan-promo__title {
-margin-top: 39px ;
-margin-left: 92px;
+margin-bottom: 36px;
   font-family: Oswald;
   font-size: 24px;
   line-height: 1.54;
