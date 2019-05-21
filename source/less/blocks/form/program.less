@@ -1,0 +1,51 @@
+.program {
+  padding: 0;
+  margin:0 auto;
+
+  &-inner {
+        min-width: 280px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin:0 auto;
+
+        @media (min-width: @tablet-width){
+          width: 708px;
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+
+        @media (min-width: @desktop-width) {
+          width: 1220px;
+          padding-right: 110px;
+          padding-left: 110px;
+          }
+        }
+        &__title {
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: @black;
+
+  margin: 31px 0 35px 0;
+
+  @media (min-width: @tablet-width){
+    font-size: 60px;
+    }
+  }
+  & h2 {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: @black;
+  }
+}

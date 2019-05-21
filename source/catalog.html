@@ -11,12 +11,12 @@
   </head>
   <body class="inner-page catalog">
     <header class="header">
-      <a class="header__logo" href="index.html">
+      <div class="header__container">
+      <a class="header__logo"href="index.html" >
         <img class="header__logo-img" src="img/logo-mobile.svg" alt="cat energy" width="191" height="39">
       </a>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
@@ -28,17 +28,18 @@
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
-      
       </nav>
+    </div>
     </header>
     <main class="main">
       <section class="catalogue">
+        <div class="catalogue__inner">
         <h1 class="catalogue__title">Каталог продукции</h1>
         <ul class="catalogue__list">
-          <li class="catalogue__item">
+          <li class="catalogue__item chicken-small">
             <div class="catalogue__item1">
             <p class="catalogue__item--image">
-              <a href="catalogue-item.html">
+              <a  class="catalogue__item--catenergy" href="catalogue-item.html">
                 <img src="img/chicken-small-mobile@1x.jpg" alt="CAT ENERGY PRO 500Г hen" width="140" height="144">
               </a>
             </p>
@@ -71,7 +72,7 @@
           <li class="catalogue__item">
             <div class="catalogue__item1">
               <p class="catalogue__item--image">
-                <a href="catalogue-item.html">
+                <a class="catalogue__item--catenergy" href="catalogue-item.html">
                   <img src="img/chicken-big-mobile@1x.jpg" alt="CAT ENERGY PRO 1000Г hen" width="140" height="144">
                 </a>
               </p>
@@ -104,7 +105,7 @@
           <li class="catalogue__item">
             <div class="catalogue__item1">
               <p class="catalogue__item--image">
-                <a href="catalogue-item.html">
+                <a class="catalogue__item--catenergy" href="catalogue-item.html">
                   <img src="img/fish-small-mobile@1x.jpg" alt="CAT ENERGY PRO 500Г fish" width="140" height="144">
                 </a>
               </p>
@@ -137,7 +138,7 @@
           <li class="catalogue__item">
             <div class="catalogue__item1">
               <p class="catalogue__item--image">
-                <a href="catalogue-item.html">
+                <a class="catalogue__item--catenergy" href="catalogue-item.html">
                   <img src="img/fish-big-mobile@1x.jpg" alt="CAT ENERGY PRO 1000Г fish" width="140" height="144">
                 </a>
               </p>
@@ -170,7 +171,7 @@
           <li class="catalogue__item">
             <div class="catalogue__item1">
               <p class="catalogue__item--image">
-                <a href="catalogue-item.html">
+                <a class="catalogue__item--catenergy" class="catalogue__item--catenergy" href="catalogue-item.html">
                   <img src="img/buckwheat-small-mobile@1x.jpg" alt="CAT ENERGY PRO 500Г buckwheat" width="140" height="144">
                 </a>
               </p>
@@ -203,7 +204,7 @@
           <li class="catalogue__item">
             <div class="catalogue__item1">
               <p class="catalogue__item--image">
-                <a href="catalogue-item.html">
+                <a class="catalogue__item--catenergy" href="catalogue-item.html">
                   <img src="img/buckwheat-big-mobile@1x.jpg" alt="CAT ENERGY PRO 1000Г buckwheat" width="140" height="144">
                 </a>
               </p>
@@ -236,7 +237,7 @@
           <li class="catalogue__item">
               <div class="catalogue__item1">
                 <p class="catalogue__item--image">
-                  <a href="catalogue-item.html">
+                  <a class="catalogue__item--catenergy" href="catalogue-item.html">
                     <img src="img/rice-small-mobile@1x.jpg" alt="CAT ENERGY PRO 500Г rice" width="140" height="144">
                   </a>
                 </p>
@@ -266,19 +267,102 @@
               <a href="catalogue-item-rice500.html">Заказать</a>
             </p>
           </li>
-          <li class="catalogue__more">
-              <p class="catalogue__open-more catalogue__open-more__cross">
+          <li class="catalogue__item catalogue-more">
+              <p class="catalogue-more__open catalogue-more__cross">
                 <a href="all-catalog.html">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</a>
               </p>
-              <p class="catalogue__aside">На самом деле вкусов гораздо больше!</p>
-              <p class="show-all">
-              <a class="button catalogue__link" href="all-catalog.html">Показать все</a>
+              <p class="catalogue-more__aside">На самом деле вкусов гораздо больше!</p>
+              <p class="catalogue-more__show-all">
+              <a class="button catalogue-more__link" href="all-catalog.html">Показать все</a>
             </p>
           </li>
         </ul>
+      </div>
       </section>
+      <section class="upsell">
+        <div class="upsell__inner">
+        <h3 class="upsell__title">Дополнительные товары</h3>
+        <div class="upsell__item__crisper">
+        <ul class="upsell__list">
+          <li class="upsell__item">
+            <div class="upsell__item--container">
+            <h4 class="upsell__item--product-name">Сахарозаменитель</h4>
+            <p class="upsell__item--aside">
+              <table class="aside-table">
+                <tr>
+                  <td>1 упаковка (100 г)</td>
+                  <td>200 Р.</td>
+                </tr>
+            </table>
+          </div>
+            <p class="button upsell__item--order">
+              <a href="catalogue-item.html">Заказать</a>
+            </p>
+          </li>
+          <li class="upsell__item">
+              <div class="upsell__item--container">
+            <h4 class="upsell__item--product-name">Питьевая вода</h4>
+            <p class="upsell__item--aside">
+              <table class="aside-table">
+                <tr>
+                  <td>5 литров</td>
+                  <td>50 Р.</td>
+                </tr>
+            </table>
+          </div>
+            <p class="button upsell__item--order">
+              <a href="catalogue-item.html">Заказать</a>
+            </p>
+          </li>
+          <li class="upsell__item">
+            <div class="upsell__item--container">
+            <h4 class="upsell__item--product-name">Молоко</h4>
+            <p class="upsell__item--aside">
+              <table class="aside-table">
+                <tr>
+                  <td>1 литр</td>
+                  <td>100 Р.</td>
+                </tr>
+            </table>
+          </div>
+            <p class="button upsell__item--order">
+              <a href="catalogue-item.html">Заказать</a>
+            </p>
+          </li>
+          <li class="upsell__item">
+              <div class="upsell__item--container">
+            <h4 class="upsell__item--product-name">Витамины</h4>
+            <p class="upsell__item--aside">
+              <table class="aside-table">
+                <tr>
+                  <td>1 упаковка (30 г)</td>
+                  <td>300 Р.</td>
+                </tr>
+            </table>
+          </div>
+            <p class="button upsell__item--order">
+              <a href="catalogue-item.html">Заказать</a>
+            </p>
+          </li>
+        </ul>
+        <p class="upsell__banner">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
+    </div>
+      </section>
+      <section class="map">
+        <div class="map__inner">
+          <div сlass="map__info">
+            <p class="map__info--item1">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="map__info--item2">ул. Большая Конюшенная 19/8<br> Санкт-Петербург</p>
+          </div>
+      <p class="map__map-img">
+        <img class="visually-hidden" src="img/map.jpg"   alt="Адрес: ул. Большая Конюшенная19/8, Санкт-Петербург">
+      </p>
+    </div>
+  </section>
     </main>
     <footer class="footer">
+      <div class="footer__inner">
       <div class="footer__logo logotype">
         <a class="logotype__down">
           <img class="logotype__down-img" src="img/logo-footer.svg" alt="cat energy" width="128" height="24">
@@ -300,11 +384,13 @@
       <div class="footer__copyright copyright">
         <a class="button copyright__link" href="http://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__logo" href="http://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo-img" src="img/htmlacademy.svg" alt="htmlacademy logotype" width="50" height="50">
+          <img class="copyright__logo-img" src="img/htmlacademy.svg" alt="htmlacademy logotype" width="27" height="34">
         </a>
       </div>
+    </div>
     </footer>
-    
+
+
     <script>
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');

@@ -1,0 +1,27 @@
+.description-table {
+  table-layout: fixed;
+    width: 141px;
+    border-collapse: collapse;
+    margin-bottom: 33px;
+
+    & td:first-child {
+      text-align: left;
+    }
+    & td:last-child {
+      text-align: right;
+    }
+
+    @media (min-width: @tablet-width){
+      width: 249px;
+     td {
+       border-bottom: 1px solid #ededed;
+       padding: 6px 0;
+     }
+     tr {
+     padding-bottom: 10px;
+   }
+   }
+   @media (min-width: @desktop-width) {
+     width: 169px;
+     }
+ }

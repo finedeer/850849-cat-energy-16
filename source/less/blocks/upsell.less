@@ -1,0 +1,158 @@
+.upsell {
+padding: 0;
+margin:0 auto;
+
+ & p{
+   margin: 0;
+ }
+
+ &__inner {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media  (min-width: @tablet-width) {
+    min-width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media  (min-width: @desktop-width) {
+    min-width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 86px;
+  }
+}
+&__crisper{
+  display: flex;
+  flex-direction: column;
+
+  @media  (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+&__list{
+list-style: none;
+padding: 0;
+margin: 0;
+
+  @media  (min-width: @desktop-width) {
+
+}
+}
+
+&__title {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: @black;
+  padding:0;
+  margin: 30px 0;
+  border-top: 1px solid #ededed;
+
+  @media  (min-width: @tablet-width) {
+    font-size: 36px;
+  }
+}
+&__item{
+
+  @media  (min-width: @tablet-width) {
+  border: 1px solid #ededed;
+  padding: 28px 38px;
+  }
+  @media  (min-width: @desktop-width) {
+    display: flex;
+    width: 895px;
+
+  }
+
+  &--container{
+    display: flex;
+    flex-direction: column;
+
+    @media  (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+  }
+
+  &--product-name{
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color:@black;
+  margin: 0;
+  padding: 14px 0 15px 0;
+
+  @media  (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+}
+  &--order{
+    width: 100%;
+    text-align: center;
+    padding: 13px 0 12px 0;
+    margin: 14px 0 17px 0;
+    background-color:@accent-color;
+    & a {
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: @white;
+  text-transform: uppercase;
+
+    }
+  }
+&__aside{
+
+  & table {
+  table-layout: fixed;
+    width: 280px;
+    border-collapse: collapse;
+    margin-bottom: 33px;
+
+    & td:first-child {
+      text-align: left;
+    }
+    & td:last-child {
+      text-align: right;
+    }
+
+    @media (min-width: @tablet-width){
+      width: 225px;
+     td {
+       border-bottom: 1px solid #ededed;
+       padding: 6px 0;
+     }
+     tr {
+     padding-bottom: 10px;
+   }
+   }
+   @media (min-width: @desktop-width) {
+     width: 285px;
+     }
+  }
+}
+}
+}
