@@ -9,9 +9,9 @@
         margin:0 auto;
 
         @media (min-width: @tablet-width){
-          width: 708px;
-          padding-right: 30px;
-          padding-left: 30px;
+          width: 631px;
+          padding-right: 67px;
+          padding-left: 71px;
         }
 
         @media (min-width: @desktop-width) {
@@ -32,12 +32,23 @@
   color: @black;
 
   margin: 31px 0 35px 0;
+  padding-left: 22px;
 
   @media (min-width: @tablet-width){
+    margin-left: auto;
+    margin-right: auto;
     font-size: 60px;
+    padding-left: 32px;
     }
+    @media (min-width: @desktop-width) {
+      width: 1220px;
+      padding-right: 110px;
+      padding-left: 113px;
+
+      }
   }
   & h2 {
+    position: relative;
   font-family: Oswald;
   font-size: 24px;
   font-weight: normal;
@@ -47,5 +58,75 @@
   letter-spacing: normal;
   text-align: left;
   color: @black;
+  background-color: @white;
+
+  &::after {
+    content: '';
+position: absolute;
+width: 1440px;
+height: 3px;
+top: 15px;
+right: -110px;
+
+background-color:@accent-color;
+z-index: -1;
+  }
+  }
+
+
+  &__send-request{
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: @tablet-width){
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    }
+
+    @media (min-width: @desktop-width) {
+
+      }
+    &--must{
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: @grey;
+  padding: 0;
+  margin: 0;
+}
+
+    & .form-button{
+    font-family: Oswald;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white;
+
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 12px 0 13px 0;
+  width: 100%;
+  background-color:@accent-color;
+  border: none;
+}
+  }
+  &__frm {
+    @media (min-width: @desktop-width) {
+display: flex;
+justify-content: space-between;
+align-items: center;
+      }
   }
 }

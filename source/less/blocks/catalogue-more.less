@@ -1,46 +1,64 @@
 .catalogue-more {
-  margin:0;
-  padding: 0;
-  padding-top: 83px;
+  padding: 83px 0 25px 0;
+  margin-bottom: 56px;
+  border: 1px solid #ededed;
+  border-left: none;
+  border-right: none;
 
   @media (min-width: @tablet-width){
     padding: 165px 37px 40px 38px;
   background-color: @white;
   border:solid 1px #cdcdcd;
+  margin-bottom: 71px;
 }
+@media (min-width: @desktop-width) {
 
+  margin-bottom: 79px;
+}
 
 &__cross {
-position: relative;
-height: 31px;
-width: 1px;
-left: 15px;
 
-
-&:after {
-content: "";
-position: absolute;
-height: 11px;
-width: 31px;
-background-color:@black;
-opacity: 0.2;
-
-}
 }
 
 
   &__open {
-    width:137px;
-    padding:0;
+    position: relative;
     margin: 0 auto;
     margin-bottom: 11px;
+    padding:0;
     text-align: center;
 
+    &::before{
+      content: '';
+      position: absolute;
+      width: 31px;
+      height: 31px;
+
+      top: -56px;
+      left: 85px;
+      background-image: url("../img/icon-plus-mobile.svg");
+      background-size: contain;
+      opacity: 0.2;
+
+      @media (min-width: @tablet-width){
+        width: 61px;
+        height: 61px;
+        top: -111px;
+        left: 37px;
+        background-image: url("../img/icon-plus.svg");
+
+      }
+    }
+
     @media (min-width: @tablet-width){
-    padding-top: 0;
+      width:137px;
+      margin-bottom: 28px;
+
     }
 
     & a{
+      margin: 0;
+      padding: 0;
   font-family: Oswald;
   font-size: 16px;
   font-weight: normal;
@@ -50,10 +68,12 @@ opacity: 0.2;
   letter-spacing: normal;
   color: @black;
 
+
   @media (min-width: @tablet-width){
     width: 135px;
     font-size: 20px;
-    line-height: 1;}
+    line-height: 1;
+  }
   }
 }
   &__aside {
@@ -78,10 +98,16 @@ opacity: 0.2;
 }
     &__show-all{
       margin: 0 auto;
-      padding:13px 0 12px 0;
-      width: 100%;
+      padding:13px 93px 12px 96px;
       text-align: center;
       background-color: @base-color;
+
+      @media (min-width: @tablet-width){
+      padding:13px 79px 12px 80px;
+      }
+      @media (min-width: @desktop-width){
+      padding:13px 39px 12px 41px;
+      }
 
       & a{
   font-family: Oswald;

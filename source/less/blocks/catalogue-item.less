@@ -1,6 +1,5 @@
 .catalogue__item{
 
-
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -10,32 +9,17 @@ align-content: center;
 margin-bottom: 25px;
 border-top: 1px solid #ededed;
 
+
 @media (min-width: @tablet-width) {
   padding: 165px 37px 40px 38px;
   margin: 0;
-  margin-bottom: 140px;
+  margin-bottom: 71px;
   background-color: @base-color;
   border-top: none;
 }
-@media (min-width: @tablet-width) {
-
-  &::before{
-    .chicken-small {
-      content: '';
-      position: absolute;
-      width: 161px;
-      height: 172px;
-      top: 11px;
-      left: 15px;
-
-      background-image: url("../img/chicken-small-tablet@1x.jpg");
-      background-repeat: no-repeat;
-
-    }
-  }
-}
 @media (min-width: @desktop-width) {
   padding: 166px 38px 40px 38px;
+  margin-bottom: 79px;
 }
 
 
@@ -101,8 +85,12 @@ border-top: 1px solid #ededed;
 &--image{
 margin: 0;
 padding: 0;
+
 }
 &--catenergy {
+
+
+
   & img {
     @media (min-width: @tablet-width) {
     display: none;

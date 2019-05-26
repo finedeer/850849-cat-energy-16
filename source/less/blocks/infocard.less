@@ -1,6 +1,13 @@
 .infocard {
   margin: 0 0 42px 0;
 
+  @media (min-width:  @tablet-width) {
+  margin-bottom: 0;
+  }
+  @media (min-width:  @desktop-width) {
+  margin-bottom: 74px;
+  }
+
   &__title{
   font-family: Oswald;
   ffont-family: Oswald;
@@ -12,14 +19,14 @@
   letter-spacing: normal;
   text-align: left;
   color: @black;
-
-  padding-bottom: 41px;
+  padding: 0;
   margin: 0;
+  margin-bottom: 41px;
 
   @media (min-width:  @tablet-width) {
   font-size: 60px;
   line-height: 1;
-  padding-bottom: 180px;
+  margin-bottom: 180px;
   }
 
 }

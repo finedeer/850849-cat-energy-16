@@ -21,11 +21,27 @@ margin: 0 auto;
   &__item {
   position: relative;
   margin: 0 0 20px 0;
-  padding:0;
+  padding: 39px 20px 22px 20px;
   background-color: @base-color;
 
+  @media (min-width:  @tablet-width) {
+    margin-bottom: 30px;
+    padding: 81px 283px 62px 52px;
+    &:last-child{
+        margin-bottom: 51px;
+
+    }
+  }
+
   @media (min-width: @desktop-width) {
-  width: 570px;
+    width:462px;
+    padding: 81px 56px 62px 52px;
+
+    margin: 0 80px 79px 0;
+  &:last-child{
+      margin-right: 0;
+      margin-bottom: 80px;
+  }
   }
 
   &::before{
@@ -54,7 +70,7 @@ margin: 0 auto;
 }
 }
 
-  &--slim::before{
+  &--slim::before {
   content: '';
   display: block;
   position: absolute;
@@ -63,6 +79,7 @@ margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
  }
+
  &--pro::before{
   content: '';
 
@@ -75,8 +92,9 @@ margin: 0 auto;
 
 }
  &__title {
-  padding: 39px 0 36px 92px;
+  padding: 0 0 0 72px;
   margin: 0;
+  margin-bottom: 36px;
   font-family: Oswald;
   font-size: 24px;
   font-weight: normal;
@@ -88,19 +106,21 @@ margin: 0 auto;
   color: @black;
 
   @media (min-width:  @tablet-width) {
-      padding: 81px 0 31px 55px;
+      padding-left: 3px;
+      margin-bottom: 31px;
         font-size: 36px;
 }
 
   @media (min-width: @desktop-width) {
-  padding-bottom: 75px;
-  padding-left: 216px;
+    padding-left: 164px;
+  margin-bottom: 75px;
   }
 }
   &__description {
     position: relative;
-    padding: 0 30px 45px 20px;
+    padding: 0 10px 0 0;
     margin: 0;
+    margin-bottom: 45px;
 
     font-family: Arial;
       font-size: 14px;
@@ -115,24 +135,19 @@ margin: 0 auto;
     @media (min-width:  @tablet-width) {
       font-size: 16px;
       line-height:1.5;
-      padding: 0 283px 62px 52px;
+      padding: 0;
+      margin-bottom: 61px;
 
-      .plan-promo--pro &{
-      padding-right: 316px;
-      }
     }
     @media (min-width: @desktop-width) {
-      padding: 0 56px 36px 52px;
 
-      .plan-promo--pro &{
-      padding-right: 73px;
-      }
+      margin-bottom: 36px;
     }
 }
   &__link {
   display: block;
   position: relative;
-  padding:0 0 22px 20px;
+  padding:0;
   margin: 0;
 
   font-family: Oswald;
@@ -147,7 +162,6 @@ margin: 0 auto;
   color: @black;
 
   @media (min-width:  @tablet-width) {
-  padding:0 0 62px 53px;
   font-size: 20px;
   }
 
@@ -157,8 +171,8 @@ margin: 0 auto;
     position: absolute;
     height: 1px;
      top: -20px;
-     left: 20px;
-     right: 20px;
+     left: 0;
+     right: 0;
     background-color: @black;
     opacity: 0.1;
 

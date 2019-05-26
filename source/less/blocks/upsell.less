@@ -30,9 +30,10 @@ margin:0 auto;
   display: flex;
   flex-direction: column;
 
-  @media  (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -57,14 +58,17 @@ margin: 0;
   text-align: left;
   color: @black;
   padding:0;
-  margin: 30px 0;
-  border-top: 1px solid #ededed;
+  margin: 0 0 30px 0;
 
   @media  (min-width: @tablet-width) {
     font-size: 36px;
   }
 }
 &__item{
+  border: 1px solid #ededed;
+  border-left: none;
+  border-right: none;
+  padding: 14px 0 17px 0;
 
   @media  (min-width: @tablet-width) {
   border: 1px solid #ededed;
@@ -72,7 +76,12 @@ margin: 0;
   }
   @media  (min-width: @desktop-width) {
     display: flex;
+    justify-content: space-between;
     width: 895px;
+    padding: 15px 0 16px 0;
+    margin: -1px 80px 0 0;
+    border-left: none;
+    border-right: none;
 
   }
 
@@ -85,6 +94,10 @@ margin: 0;
     align-items: center;
     justify-content: space-between;
     }
+    @media  (min-width: @desktop-width) {
+    width: 648px;
+    padding-right: 39px;
+  }
   }
 
   &--product-name{
@@ -100,6 +113,7 @@ margin: 0;
   color:@black;
   margin: 0;
   padding: 14px 0 15px 0;
+  text-align: center;
 
   @media  (min-width: @tablet-width) {
     font-size: 20px;
@@ -111,6 +125,13 @@ margin: 0;
     padding: 13px 0 12px 0;
     margin: 14px 0 17px 0;
     background-color:@accent-color;
+
+    @media (min-width: @desktop-width) {
+    width: 63px;
+    padding:13px 90px 12px 91px;
+    margin-left: auto;
+      }
+
     & a {
   font-family: Oswald;
   font-size: 16px;
@@ -121,38 +142,107 @@ margin: 0;
   letter-spacing: normal;
   color: @white;
   text-transform: uppercase;
-
     }
   }
-&__aside{
 
-  & table {
-  table-layout: fixed;
-    width: 280px;
-    border-collapse: collapse;
-    margin-bottom: 33px;
+}
 
+&__banner {
+  position: relative;
+  margin: 35px 0 39px 0;
+  padding: 190px 61px 43px 60px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width){
+    margin: 69px 0 76px 0;
+    padding: 75px 125px 69px 424px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+   }
+ @media (min-width: @desktop-width) {
+   margin: 0;
+   padding: 190px 43px 43px 43px;
+   background-image: url("../img/gift-photo-desktop@1x.jpg");
+   }
+
+  &::before{
+    content: '';
+    position: absolute;
+
+    top: 65px;
+    left: 113px;
+
+  width: 56px;
+  height: 61px;
+  object-fit: contain;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width){
+    left: 91px;
+   }
+ @media (min-width: @desktop-width) {
+   left: 96px;
+   }
+  }
+
+  &--description{
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color:@white;
+  }
+}
+}
+.aside-table {
+table-layout: fixed;
+  width: 280px;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: @grey;
+
+  & td:first-child {
+    text-align: left;
+  }
+  & td:last-child {
+    text-align: right;
+  }
+
+  @media (min-width: @tablet-width){
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 0;
+    margin-left: auto;
     & td:first-child {
-      text-align: left;
+      text-align: right;
     }
     & td:last-child {
       text-align: right;
     }
-
-    @media (min-width: @tablet-width){
-      width: 225px;
-     td {
-       border-bottom: 1px solid #ededed;
-       padding: 6px 0;
-     }
-     tr {
-     padding-bottom: 10px;
+ }
+ @media (min-width: @desktop-width) {
+   width: 295px;
+   & td:first-child {
+     text-align: left;
+   }
+   & td:last-child {
+     text-align: right;
    }
    }
-   @media (min-width: @desktop-width) {
-     width: 285px;
-     }
-  }
-}
-}
 }

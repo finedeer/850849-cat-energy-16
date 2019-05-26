@@ -3,20 +3,20 @@
   padding: 0;
 
   @media (min-width: @tablet-width){
+
       display: flex;
       flex-wrap: wrap;
       justify-content:flex-end;
-
-      width: 500px;
     }
     @media (min-width: @desktop-width) {
-        width: 780px;
+
       }
 
 
   & a{
   display: block;
   padding: 24px 0 20px 0;
+  margin: 0;
 
   font-family: Oswald;
   font-size: 20px;
@@ -30,35 +30,43 @@
   text-decoration: none;
   text-align: center;
 
-  border-top: 1px solid @base-color;
-  border-bottom: 1px solid @base-color;
+  & [href] {
+   &:hover {
+     color: rgba(17, 17, 17, 0.6);
+   }
+
+   &:active {
+     color: rgba(17, 17, 17, 0.3);
+  }
+ }
 
   @media (min-width: @tablet-width) {
   font-size: 18px;
   line-height: 1.39;
   text-align: left;
   color: #222222;
-}
-
- & [href] {
-  &:hover {
-    color: rgba(17, 17, 17, 0.6);
   }
-
-  &:active {
-  color: rgba(17, 17, 17, 0.3);
- }
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 1.25;
+    .home &{
+  color: @white;
+  }
+  }
 }
-}
-  &__item{
+  &__item {
     display: block;
     position: relative;
-    margin: 0 auto;
+    margin: 0;
+    margin-bottom: -1px;
     padding: 0;
+    border-top: 1px solid @base-color;
+    border-bottom: 1px solid @base-color;
 
     @media (min-width: @tablet-width) {
     margin-left: 0;
     margin-right: 38px;
+    border: none;
 
     &:first-child {
     margin-right: 36px;
@@ -75,14 +83,13 @@
 
       bottom: 12px;
       left: 0;
-      right: 0;
+      right:0;
 
      background: @accent-color;
 
      @media (min-width: @desktop-width) {
-       right: 30px;
-       left: 30px;
-        .header__inner{
+
+      .home &{
       background: @white;
     }
   }
@@ -99,16 +106,11 @@
 
   &[href] {
     &:hover {
-      color: #826550;
-
-      background-color: #000000;
+      color:rgba 17 17 17, 0.6;
     }
 
     &:active {
-      color: #ffffff;
-
-      background-color: #000000;
-      opacity: 0.3;
+      color: @black;
     }
   }
 }
@@ -116,28 +118,13 @@
 }
 @media (min-width: @desktop-width) {
 
-  .site-list__item {
-    margin-right: 0;
-
-  }
-
-  .site-list__item a {
-    padding-right: 31px;
-    padding-left: 31px;
-  }
-
   .site-list__item a[href] {
     &:hover {
-      color: #000000;
 
-      background-color: #ffffff;
     }
 
     &:active {
-      color: rgba(0, 0, 0, 0.3);
 
-      background-color: #ffffff;
-      opacity: 1;
     }
   }
 }

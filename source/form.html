@@ -9,9 +9,9 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="inner-page form">
+  <body class="inner-page">
     <header class="header">
-      <div class="header__container">
+      <div class="header__inner">
       <a class="header__logo" href="index.html">
         <img class="header__logo-img" src="img/logo-mobile.svg" alt="cat energy" width="191" height="39">
       </a>
@@ -33,10 +33,12 @@
     </header>
       <main class="main">
         <section class="program">
-          <div class="program-inner">
+
           <form class="program__request" action="https://echo.htmlacademy.ru" method="post">
           <h1 class="program__title">Подбор программы</h1>
+          <div class="program-inner">
           <div class="program__frm form">
+            <div class="form-container">
             <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <p class="form__item">
           <label class="form__item name">Имя:*
@@ -53,6 +55,7 @@
       <input  type="number" name="cat-age" placeholder="7">
       </label>
       </p>
+    </div>
       <fieldset сlass="form__trend order-form">
             <legend class="visually-hidden">Направление программы</legend>
             <ul class="order-form__list">
@@ -72,7 +75,7 @@
           </fieldset>
           </div>
           <div class="program__cntct contacts">
-            <h2 class="contacts__title">Контактные данные<br>(владельца кота)</h2>
+            <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
             <p class="contacts__item">
             <label class="contacts__mail">E-mail:*
             <input   type="email" name="email" placeholder="kuklachev@gmail.com">
@@ -92,10 +95,11 @@
               </label>
               </p>
           </div>
-          <div class="program__moar extra">
-            <fieldset сlass="extra options">
+          <div class="program__moar options">
+            <fieldset сlass="options__extra">
+              <h2 class="options__title">Дополнительно</h3>
               <ul class="options__list">
-                <li class="options__item checkbox">
+                <li class="options__item options__item--checked checkbox">
                   <input class="visually-hidden checkbox__sweetener" type="checkbox" name="sweetener" id="sweetener" checked>
                   <label for="sweetener">Сахарозаменитель</label>
                 </li>
@@ -116,21 +120,21 @@
           </div>
           <div class="program__send-request">
             <button class="button form-button" type="submit">Отправить заявку</button>
-            <p>* — Обязательные поля</p>
+            <p class="program__send-request--must">* — Обязательные поля</p>
           </div>
+        </div>
         </form>
-      </div>
         </section>
         <section class="map">
           <div class="map__inner">
-            <div сlass="map__info">
-              <p class="map__info--item1">Приглашаем к сотрудничеству дилеров!</p>
-              <p class="map__info--item2">ул. Большая Конюшенная 19/8<br> Санкт-Петербург</p>
-            </div>
+            <ul class="map__list">
+              <li class="map__item">Приглашаем к сотрудничеству дилеров!</li>
+              <li class="map__item">ул. Большая Конюшенная 19/8<br> Санкт-Петербург</li>
+            </ul>
+          </div>
         <p class="map__map-img">
           <img class="visually-hidden" src="img/map.jpg"   alt="Адрес: ул. Большая Конюшенная19/8, Санкт-Петербург">
         </p>
-      </div>
     </section>
       </main>
       <footer class="footer">

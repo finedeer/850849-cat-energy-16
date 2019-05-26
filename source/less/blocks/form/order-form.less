@@ -1,16 +1,35 @@
 .order-form {
-  border: none;
+border: none;
   padding: 0;
   margin: 0;
+
   & fieldset {
     padding: 0;
     margin: 0;
   }
 
+
+  @media (min-width: @desktop-width) {
+
+    }
+
   &__list {
 list-style: none;
-padding: 0 46px;
+padding: 29px 0 26px 46px;
+width: 320px;
 margin: 0;
+border: solid 1px #ededed;
+border-left: none;
+border-right: none;
+
+@media (min-width: @tablet-width){
+border: solid 1px #cdcdcd;
+width: 542px;
+padding: 36px 0 33px 88px;
+}
+@media (min-width: @desktop-width) {
+width: 482px;
+  }
   }
   &__item {
     position: relative;
