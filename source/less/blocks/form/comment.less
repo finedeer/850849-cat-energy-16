@@ -1,4 +1,24 @@
 .comment {
+  &__title-inner{
+    position: relative;
+    &::before {
+      content: "";
+        z-index: -1;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        top: 11px;
+        right: -20px;
+
+  background-color:@accent-color;
+   @media (min-width: @tablet-width){
+      width: 200%;
+      top: 18px;
+      right: -65px;}
+
+    }
+
+  }
   &__title{
   padding: 0;
   margin: 0 0 31px 0;
@@ -12,7 +32,7 @@ margin-bottom: 71px;
     opacity: 0.5;
     border: solid 1px #cdcdcd;
     margin: 0 0 31px 0;
-    padding: 15px 15px 118px 16px;
+    padding: 15px 5px 118px 16px;
 
     @media (min-width: @tablet-width){
       margin-bottom: 69px;
@@ -26,6 +46,7 @@ margin-bottom: 71px;
 
 
   & input {
+    width: 100%;
     padding:0;
     margin: 0;
     font-family: Oswald;

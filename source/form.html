@@ -38,7 +38,7 @@
           <h1 class="program__title">Подбор программы</h1>
           <div class="program-inner">
           <div class="program__frm form">
-            <div class="form-container">
+            <div class="form__form-container">
             <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <p class="form__item">
           <label class="form__item name">Имя:*
@@ -60,8 +60,9 @@
             <legend class="visually-hidden">Направление программы</legend>
             <ul class="order-form__list">
               <li class="order-form__item input-radio">
+                <label for="form-weight-loss">Похудение
                 <input class="visually-hidden input-radio__loss" type="radio" name="order-form" value="weight-loss" id="form-weight-loss" checked>
-                <label for="form-weight-loss">Похудение</label>
+                </label>
               </li>
               <li class="order-form__item input-radio">
                 <input class="visually-hidden input-radio__gain" type="radio" name="order-form" value="weight-gain" id="form-weight-gain">
@@ -75,7 +76,10 @@
           </fieldset>
           </div>
           <div class="program__cntct contacts">
+            <div class="contacts__title-inner">
             <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+          </div>
+            <div class="contacts__inner">
             <p class="contacts__item">
             <label class="contacts__mail">E-mail:*
             <input   type="email" name="email" placeholder="kuklachev@gmail.com">
@@ -86,19 +90,25 @@
               <input  type="number" name="telephone" placeholder="8 (960) 900-60-90">
               </label>
               </p>
+            </div>
           </div>
           <div class="comment">
+            <div class="comment__title-inner">
             <h2 class="comment__title">Комментарий</h2>
+          </div>
             <p class="comment__item">
               <label class="comment__feedback">
-              <input  type="text" name="textarea" placeholder="Расскажите обо всех повадках кота">
+              <input  type="text" name="textarea"  maxlength="540" placeholder="Расскажите обо всех повадках кота">
               </label>
               </p>
           </div>
           <div class="program__moar options">
             <fieldset сlass="options__extra">
+              <div class="options__title-inner">
               <h2 class="options__title">Дополнительно</h3>
+              </div>
               <ul class="options__list">
+                  <div class="options__list--inner">
                 <li class="options__item options__item--checked checkbox">
                   <input class="visually-hidden checkbox__sweetener" type="checkbox" name="sweetener" id="sweetener" checked>
                   <label for="sweetener">Сахарозаменитель</label>
@@ -107,6 +117,8 @@
                   <input class="visually-hidden checkbox__water" type="checkbox" name="water" id="water" checked>
                   <label for="water">Питьевая вода</label>
                 </li>
+              </div>
+                <div class="options__list--inner">
                 <li class="options__item checkbox">
                   <input class="visually-hidden checkbox__milk" type="checkbox" name="milk" id="milk" checked>
                   <label for="milk">Молоко</label>
@@ -115,6 +127,7 @@
                   <input class="visually-hidden checkbox__vitamins" type="checkbox" name="vitamins" id="vitamins" checked>
                   <label for="vitamins">Витамины</label>
                 </li>
+              </div>
               </ul>
             </fieldset>
           </div>

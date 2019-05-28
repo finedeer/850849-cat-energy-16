@@ -5,7 +5,7 @@
   margin-bottom: 0;
   }
   @media (min-width:  @desktop-width) {
-  margin-bottom: 74px;
+  margin-bottom: 77px;
   }
 
   &__title{
@@ -38,7 +38,7 @@ flex-direction: column;
   margin: 0;
 
   padding: 0 0 0 80px;
-  font-family: Oswald;
+  font-family: Arial;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -57,51 +57,38 @@ flex-direction: column;
   }
   @media (min-width: @desktop-width) {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
   &__item{
   display: block;
   position: relative;
-
+  padding: 0;
   margin:0;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   align-self: center;
 
   @media (min-width: @tablet-width) {
-    &--healfy,
-    &--powder {
-    padding-bottom: 254px;
-    }
-    &--healfy,
-    &--feeding {
-      width: 203px;
-      padding-right: 183px;
+    align-self:flex-start;
+    margin-bottom: 0;
+    &--healfy{
+      width: 204px;
+      margin-bottom: 254px;
     }
     &--powder{
-      width: 220px;
-      padding-right: 100px;
+      width: 225px;
+      margin-left:180px;
     }
     &--result {
       width: 244px;
-      padding-right: 70px;
-
+      margin-left: 180px;
+    }
+    &--feeding {
+      width: 204px;
     }
   }
   @media (min-width: @desktop-width) {
-    padding-bottom: 138px;
-    padding-left: 0;
-    &--healfy{
-      padding-right:124px;
-    }
-    &--powder {
-      padding-right:105px;
-    }
-    &--feeding {
-      padding-right:121px;
-    }
-    &--result {
-      padding-right:0;
-    }
+margin: 0;
   }
 
   &::before {
